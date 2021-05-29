@@ -1,5 +1,17 @@
 function workwithdata(data) {
-    console.log(data);
+    var final_array=[];
+    final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)];);
+    final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)];);
+    final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)];);
+    final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)];);
+    final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)];);
+    
+    var container_ = document.getElementById("randomproblems");
+    container_.innerHTML='';
+    for (i in final_array) {
+        container_.innerHTML += "<a href=\""+final_array[i]['link']+"\">"+final_array[i]['name']+"</a> - Difficultiy Level: "+final_array[i]['difficulty']+" - Language: "+final_array[i]['language']+" <br>";
+    }
+    
 };
 
 $.ajax({
