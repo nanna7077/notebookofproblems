@@ -1,11 +1,10 @@
-{"problems":
-    [
-        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "none", "link": "/problems/print_n_natural_numbers_without_loop_python.html"},
-        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "none", "link": "/problems/print_n_natural_numbers_without_loop_python.html"},
-        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "none", "link": "/problems/print_n_natural_numbers_without_loop_python.html"},
-        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "none", "link": "/problems/print_n_natural_numbers_without_loop_python.html"},
-        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "none", "link": "/problems/print_n_natural_numbers_without_loop_python.html"},
-        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "none", "link": "/problems/print_n_natural_numbers_without_loop_python.html"},
-        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "none", "link": "/problems/print_n_natural_numbers_without_loop_python.html"}
-    ]
-}
+{"problems":[
+        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "Python", "link": "problems/print_n_natural_numbers_without_loop_python.html", "contributerName": "Nannan", "contributorLink": "https://github.com/nanna7077"},
+        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "Python", "link": "problems/print_n_natural_numbers_without_loop_python.html", "contributerName": "Nannan", "contributorLink": "https://github.com/nanna7077"},
+        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "Python", "link": "problems/print_n_natural_numbers_without_loop_python.html", "contributerName": "Nannan", "contributorLink": "https://github.com/nanna7077"},
+        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "Python", "link": "problems/print_n_natural_numbers_without_loop_python.html", "contributerName": "Nannan", "contributorLink": "https://github.com/nanna7077"},
+        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "Python", "link": "problems/print_n_natural_numbers_without_loop_python.html", "contributerName": "Nannan", "contributorLink": "https://github.com/nanna7077"},
+        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "Python", "link": "problems/print_n_natural_numbers_without_loop_python.html", "contributerName": "Nannan", "contributorLink": "https://github.com/nanna7077"},
+        {"name": "The No Loop Challenge", "difficulty": "Easy", "language": "Python", "link": "problems/print_n_natural_numbers_without_loop_python.html", "contributerName": "Nannan", "contributorLink": "https://github.com/nanna7077"}
+        
+    ]}
