@@ -3,7 +3,7 @@ function workwithdata(data) {
 };
 
 $.ajax({
-    url: "notebookofproblems/static/problemList.json".
+    url: "notebookofproblems/static/problemList.json",
     success: function (data) {
     workwithdata(data);
     },
