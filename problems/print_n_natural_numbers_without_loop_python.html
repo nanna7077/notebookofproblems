@@ -16,8 +16,8 @@
         <div class="container" style="float: right; width: 97%;">
             <div class="topbar">
                 <br>
-                <a href=""><button class="silentbttn">Home</button></a>
-                <a href="/search"><button class="silentbttn">Search</button></a>
+                <a href="index.html"><button class="silentbttn">Home</button></a>
+                <a href="search.html"><button class="silentbttn">Search</button></a>
             </div>
             <center>
                 <div class="title">
@@ -58,7 +58,7 @@
                 <center><button class="bttn" id="showcode" onclick="showCode()">Show/Hide code</button></center>
                 <div class="hiddencontainer" id="solution" style="display: none;">
                     <pre><code class="language-python hljs" style="background: none;"">
-                        print(*range(input("Numbers to be printed: ")))
+                        print(*range(int(input("Numbers to be printed: "))))
                     </code></pre>
                 </div>
                 <div class="footer">
