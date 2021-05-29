@@ -1,13 +1,10 @@
 function workwithdata(data) {
     var final_array=[];
-    console.log(data);
     final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)]);
     final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)]);
     final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)]);
     final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)]);
     final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)]);
-    console.log("---");
-    console.log(final_array);
     var container_ = document.getElementById("randomproblems");
     container_.innerHTML='';
     for (i in final_array) {
