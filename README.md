@@ -1,2 +1,2 @@
-# the_notebook_of_problems
+# notebookofproblems
  A collection of programming problems.
