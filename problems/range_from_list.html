@@ -4,9 +4,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script>
         <title>The Notebook Of Problems</title>
     </head>
     <body>
@@ -58,215 +55,33 @@
                 <center><button class="bttn" id="showcode" onclick="showCode()">Show/Hide code</button></center>
                 <div class="hiddencontainer" id="solution" style="display: none;">
                     Python: (Solution by <a href="https://github.com/Manoj-Paramsetti/">Manoj</a>) Took 0.04 seconds to run.
-                    <pre><code class="language-python hljs" style="background: none;"">
-                        List = [int(x) for x in input().split()]
-                        for i in range(len(List)-1):
-                        print([*range(List[i],List[i+1]+1)])
+                    <pre><code style="background: none; font-size: 12;">
+                        <script src="http://gist-it.appspot.com/https://github.com/nanna7077/notebookofproblems/blob/main/problems/range_from_list/solution_python_manoj.py"></script>
                     </code></pre>
                     <br>
                     Rust: (Solution by <a href="">Nannan</a>) Took 0.03 seconds to run.
-                    <pre><code style="background: none;"">
-                        use std::io;
-                        fn main()
-                        {
-                            let mut input = String::new();
-                            io::stdin().read_line(&mut input).unwrap();
-                            let a: i32 = input.trim().parse().unwrap();
-                            let mut input = String::new();
-                            io::stdin().read_line(&mut input).unwrap();
-                            let b: i32 = input.trim().parse().unwrap();
-                            let mut input = String::new();
-                            io::stdin().read_line(&mut input).unwrap();
-                            let c: i32 = input.trim().parse().unwrap();
-                            let mut input = String::new();
-                            io::stdin().read_line(&mut input).unwrap();
-                            let d: i32 = input.trim().parse().unwrap();
-                            let mut input = String::new();
-                            io::stdin().read_line(&mut input).unwrap();
-                            let e: i32 = input.trim().parse().unwrap();
-                            
-                            print!("[ ");
-                            for i in a..b{
-                                print!(" {} ",i);
-                            }
-                            print!(" ]");
-                            println!("");
-                            print!("[ ");
-                            for i in b..c{
-                                print!(" {} ",i);
-                            }
-                            print!(" ]");
-                            println!("");
-                            print!("[ ");
-                            for i in d..e{
-                                print!(" {} ",i);
-                            }
-                            print!(" ]");
-                        }
+                    <pre><code style="background: none; font-size: 12;">
+                        <script src="http://gist-it.appspot.com/https://github.com/nanna7077/notebookofproblems/blob/main/problems/range_from_list/solution_rust_nannan.rs"></script>
                     </code></pre>
                     <br>
                     Fortran: (Solution by <a href="https://github.com/Manoj-Paramsetti/">Manoj</a>) Took 0.09 seconds to run.
-                    <pre><code style="background: none;">
-                        program listgen
-                        integer :: a
-                        integer :: b
-                        integer :: c
-                        integer :: d
-                        Read *, a
-                        Read *, b
-                        Read *, c
-                        Read *, d
-                        write(*, fmt="(1x,a,i0)", advance="no") "["
-                        do n = a, b  
-                            write(*, fmt="(1x,a,i0)", advance="no") " ", n
-                        end do
-                        print*, "]"
-                        write(*, fmt="(1x,a,i0)", advance="no") "["
-                        do j = b, c  
-                            write(*, fmt="(1x,a,i0)", advance="no") "", n
-                        end do
-                        print*, "]"
-                        write(*, fmt="(1x,a,i0)", advance="no") "["
-                        do k = c, d  
-                            write(*, fmt="(1x,a,i0)", advance="no") "", n
-                        end do
-                        print*, "]"
-                        
-                        end program listgen
+                    <pre><code style="background: none; font-size: 12;">
+                        <script src="http://gist-it.appspot.com/https://github.com/nanna7077/notebookofproblems/blob/main/problems/range_from_list/solution_fortran_manoj.f"></script>
                     </code></pre>
                     <br>
                     Ruby: (Solution by <a href="">Nannan</a>) Took 0.3 seconds to run.
-                    <pre><code style="background: none;"">
-                        a=gets.chomp
-                        b=gets.chomp
-                        c=gets.chomp
-                        d=gets.chomp
-                        e=gets.chomp
-
-                        print "["
-                        for i in a..b
-                            print " #{i} "
-                        end
-                        print "]"
-                        print "\n"
-                        print "["
-                        for i in b..c
-                            print " #{i} "
-                        end
-                        print "]"
-                        print "\n"
-                        print "["
-                        for i in c..d
-                            print " #{i} "
-                        end
-                        print "]"
-                        print "\n"
-                        print "["
-                        for i in d..e
-                            print " #{i} "
-                        end
-                        print "]"
+                    <pre><code style="background: none; font-size: 12;">
+                        <script src="http://gist-it.appspot.com/https://github.com/nanna7077/notebookofproblems/blob/main/problems/range_from_list/solution_ruby_nannan.rb"></script>
                     </code></pre>
                     <br>
                     Lisp: (Solution by <a href="">Nannan</a>) Took 0.5 seconds to run.
-                    <pre><code class="language-python hljs" style="background: none;"">
-                        (defun range (start end)
-                        (loop for i from start below end collect i))
-
-                        (setq a (read))
-                        (setq b (read))
-                        (setq c (read))
-                        (setq d (read))
-                        (setq e (read))
-
-                        (print (range a (+ b 1)))
-                        (print (range b (+ c 1)))
-                        (print (range c (+ d 1)))
-                        (print (range d (+ e 1)))
-                    </code></pre>
-                    <br>
-                    Java: (Solution by <a href="https://github.com/Manoj-Paramsetti/">Manoj</a>) Took 32 seconds to run.
-                    <pre><code style="background: none;"">
-                        import java.util.*;  
-                        public class Exp{
-                        public static void main(String args[]){
-                            Scanner sc= new Scanner(System.in);
-                            int a = sc.nextInt();
-                            int b = sc.nextInt();
-                            int c = sc.nextInt();
-                            int d = sc.nextInt();
-                            int e = sc.nextInt();
-                            System.out.print("[");
-                            int i;
-                            for(i = a; i < b; i++){
-                                System.out.print(i);
-                                System.out.print(",");
-                            }
-                            System.out.print(i);
-                            System.out.println("]");
-                                System.out.print("[");
-                                for(i = b; i < c; i++){
-                                        System.out.print(i);
-                                        System.out.print(", ");
-                                }
-                                System.out.print(i);
-                                System.out.println("]");
-                                System.out.print("[");
-                                for(i = c; i < d; i++){
-                                        System.out.print(i);
-                                        System.out.print(", ");
-                                }
-                                System.out.print(i);
-                                System.out.println("]");
-                                System.out.print("[");
-                                for(i = d; i < e; i++){
-                                        System.out.print(i);
-                                        System.out.print(", ");
-                                }
-                                System.out.print(i);
-                                System.out.println("]");
-                        }
-                        }
+                    <pre><code style="background: none; font-size: 12;">
+                        <script src="http://gist-it.appspot.com/https://github.com/nanna7077/notebookofproblems/blob/main/problems/range_from_list/solution_nannan_lisp.lisp"></script>
                     </code></pre>
                     <br>
                     C: (Solution by <a href="">Nannan</a>) Took 0.03 seconds to run.
-                    <pre><code style="background: none;"">
-                        #include<stdio.h>
-                            int main()
-                            {
-                                int a, b, c, d, e, i;
-                                scanf("%d", &a);
-                                scanf("%d", &b);
-                                scanf("%d", &c);
-                                scanf("%d", &d);
-                                scanf("%d", &e);
-                                
-                                printf("[");
-                                for (i=a;i<=b;i++)
-                                {
-                                    printf(" %d ",i);
-                                }
-                                printf("]");
-                                printf("[");
-                                for (i=b;i<=c;i++)
-                                {
-                                    printf(" %d ",i);
-                                }
-                                printf("[");
-                                printf("]");
-                                for (i=c;i<=d;i++)
-                                {
-                                    printf(" %d ",i);
-                                }
-                                printf("[");
-                                printf("]");
-                                for (i=d;i<=e;i++)
-                                {
-                                    printf(" %d ",i);
-                                }
-                                printf("]");
-                            return 0;
-                            }
+                    <pre><code style="background: none; font-size: 12;">
+                        <script src="http://gist-it.appspot.com/https://github.com/nanna7077/notebookofproblems/blob/main/problems/range_from_list/solution_c_nannan.c"></script>
                     </code></pre>
                 </div>
                 <div class="footer">
