@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/paper.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <title>The Notebook Of Problems</title>
+    </head>
+    <body>
+        <div class="sidebar" style="float: left; width: 3%;">
+            <br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br>
+        </div>
+        <div class="container" style="float: right; width: 97%;">
+            <div class="topbar">
+                <br>
+                <a href="/"><button class="silentbttn">Home</button></a>
+                <a href="/search"><button class="silentbttn">Search</button></a>
+            </div>
+            <center>
+                <div class="title">
+                    The Notebook Of Problems
+                </div>
+            </center>
+            <br><br>
+            <center><div class="title" style="font-size: 34;">Problem #: The No Loop Challenge</div></center>
+            <center>
+                <div class="tags">
+                    Tags:
+                    <button class="language">Python</button>
+                    <button class="Difficulty">Easy</button>
+                </div>
+            </center>
+            <div class="textcontainer">
+                Problem Statement: Print 'n' whole numbers without explitly using any loops.
+                <br><br>
+                Constraints:<br>
+                &emsp;&emsp;&emsp;&emsp;The code should be single line. : )
+                <br><br>
+                Sample Output:
+                <div class="codedisp">
+                    Numbers to be printed: 20<br>
+                    &emsp;0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+                </div>
+                Here's a nice interpreter to try it out:
+                <br>
+                <div class="container" style="margin-left: 4vh; margin-top: 2vh; margin-bottom: 2vh;">
+                    <iframe src="http://brython.info/console.html" width="680" height="250"></iframe>
+                </div>
+                Check below to see if your solution is correct or if you have come up with a much more awesome solution <strike>Which you can share with us too : D</strike>!
+                <br>
+                <center><button class="bttn" id="showcode" onclick="showCode()">Show/Hide code</button></center>
+                <div class="hiddencontainer" id="solution" style="display: none;">
+                    <pre><code class="language-python hljs" style="background: none;"">
+                        print(*range(input("Numbers to be printed: ")))
+                    </code></pre>
+                </div>
+                <div class="footer">
+                    <center>Designed with 💙 by <a href="https://github.com/nanna7077">Nannan</a></center>
+                </div>
+        </div>
+    </body>
+    <script>
+        
+        function showCode() {
+            var x = document.getElementById("solution");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "none";
+            }
+        };
+    </script>
+</html>

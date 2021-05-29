@@ -1,0 +1,107 @@
+body {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAHlBMVEUAAABkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGSH0mEbAAAACnRSTlMAzDPDPPPYnGMw2CgMzQAAAChJREFUKM9jgAPOAgZMwGIwKkhXQSUY0BCCMxkEYUAsEM4cjI4fwYIAf2QMNbUsZjcAAAAASUVORK5CYII=');
+    background-size: 15px;
+}
+
+.sidebar {
+
+}
+
+.circle {
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+}
+
+.circle::before{
+    background-color: #00000083;
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    content: '';
+}
+
+.title{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 50;
+}
+
+.textcontainer{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 24;
+    margin-left: 5vh;
+}
+
+.footer {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20;
+}
+
+.language {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20;
+    background: rgba(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 2vh;
+    margin-left: 1vh;
+    margin-right: 2vh;
+}
+
+.difficulty {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 2vh;
+}
+
+.tags {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 24;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 2 2 2 2;
+}
+
+.codedisp {
+    background: black;
+    width: 55%;
+    color: white;
+    text-indent: 2vh;
+    margin-left: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 1vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18;
+    padding: 2 2 2 2;
+    font-weight: bold;
+}
+
+.bttn {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.topbar {
+    margin-left: 4vh;
+}
+
+.silentbttn {
+    font-size: 14;
+    background: none;
+    border-radius: 1vh;
+    padding: 1 1 1 1;
+    display: inline-table;
+    margin-left: 2vh;
+}
