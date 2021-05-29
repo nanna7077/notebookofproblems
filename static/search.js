@@ -1,7 +1,7 @@
 function workwithdata(data) {
     var tbl = document.getElementById("searchtable");
     for (i in data['problems']){
-        tbl.innerHTML+="<td>"+data["problems"][i]['title']+"</td><td>"+data["problems"][i]["difficulty"]+"</td><td>"+data["problems"][i]['language']+"</td><td><a href=\""+data["problems"][i]["contributorLink"]+"\">"+data["problems"][i]["contributorName"]+"</a></td>"
+        tbl.innerHTML+="<td>"+data["problems"][i]['name']+"</td><td>"+data["problems"][i]["difficulty"]+"</td><td>"+data["problems"][i]['language']+"</td><td><a href=\""+data["problems"][i]["contributorLink"]+"\">"+data["problems"][i]["contributorName"]+"</a></td>"
     }
 };
 
