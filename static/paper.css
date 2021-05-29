@@ -3,10 +3,6 @@ body {
     background-size: 15px;
 }
 
-.sidebar {
-
-}
-
 .circle {
     height: 35px;
     width: 35px;
@@ -97,6 +93,17 @@ body {
     margin-left: 4vh;
 }
 
+.contributor {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 24;
+    margin-left: 2vh;
+    tab-size: 2;
+}
+
+.contributor::before {
+    content: " | ";
+}
+
 .silentbttn {
     font-size: 14;
     background: none;
@@ -104,4 +111,29 @@ body {
     padding: 1 1 1 1;
     display: inline-table;
     margin-left: 2vh;
+}
+
+.searchtable {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 22;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.searchtable td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 8 8 8 8;
+}
+
+.searchtable th{
+    border: 1px solid rgba(0, 0, 0, 0.712);
+    align-content: center;
+    padding: 8 8 8 8;
+    font-weight: bold;
+}
+
+.searchtable tr:hover{
+    background-color: #808080ce;
+    color: blue;
 }

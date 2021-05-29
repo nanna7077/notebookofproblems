@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="static/paper.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>The Notebook Of Problems</title>
+    </head>
+    <body>
+        <div class="sidebar" style="float: left; width: 3%;">
+            <br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br>
+        </div>
+        <div class="container" style="float: right; width: 97%;">
+            <br>
+            <center>
+                <div class="title">
+                    The Notebook Of Problems
+                </div>
+                <br>
+                <div class="title" style="font-size: 30;">
+                    Search for your "That One Problem&trade;"
+                </div>
+            <br><br>
+            <table class="searchtable" id="searchtable">
+                <tr>
+                    <th style="border-color: #0000007a;"><input type="textbox" id="searchbytitle" placeholder="Search by title" onkeyup="FilterByTitle()"></th>
+                    <th style="border-color: #0000007a;"><input type="textbox" id="searchbydifficulty" placeholder="Search by difficulty" onkeyup="FilterByDiff()"></th>
+                    <th style="border-color: #0000007a;"><input type="textbox" id="searchbylang" placeholder="Search by language" onkeyup="FilterByLang()"></th>
+                    <th style="border-color: #0000007a;"><input type="textbox" id="searchbycontrib" placeholder="Search by contributor" onkeyup="FilterByContrib()"></th>
+                </tr>
+                <tr>
+                    <th>Problem Title</th>
+                    <th>Difficulty Level</th>
+                    <th>Language</th>
+                    <th>Contrbuted by</th>
+                </tr>
+            </table>
+            </center>
+            <div class="footer">
+                <br><br><br><br>
+                <center>Designed with 💙 by <a href="https://github.com/nanna7077">Nannan</a></center>
+            </div>
+        </div>
+    </body>
+    <script>
+        function FilterByTitle() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchbytitle");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("searchtable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+                }
+            }
+            };
+        function FilterByDiff() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchbydifficulty");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("searchtable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+                }
+            }
+            };
+        function FilterByLang() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchbylang");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("searchtable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[2];
+                if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+                }
+            }
+            };
+        function FilterByContrib() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchbycontrib");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("searchtable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[3];
+                if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+                }
+            }
+            };
+    </script>
+</html>
