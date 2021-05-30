@@ -1,20 +1,15 @@
 function workwithdata(data) {
     var final_array=[];
     var x=Math.floor(Math.random() * data['problems'].length);
-    final_array.push(data['problems'][x]);
-    data['problems'].pop(x);
+    final_array.push(data['problems'].pop(x););
     var x=Math.floor(Math.random() * data['problems'].length);
-    final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)]);
-    data['problems'].pop(x);
+    final_array.push(data['problems'].pop(x););
     var x=Math.floor(Math.random() * data['problems'].length);
-    final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)]);
-    data['problems'].pop(x);
+    final_array.push(data['problems'].pop(x););
     var x=Math.floor(Math.random() * data['problems'].length);
-    final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)]);
-    data['problems'].pop(x);
+    final_array.push(data['problems'].pop(x););
     var x=Math.floor(Math.random() * data['problems'].length);
-    final_array.push(data['problems'][Math.floor(Math.random() * data['problems'].length)]);
-    data['problems'].pop(x);
+    final_array.push(data['problems'].pop(x););
     var container_ = document.getElementById("randomproblems");
     container_.innerHTML='';
     for (i in final_array) {
