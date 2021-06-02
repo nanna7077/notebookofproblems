@@ -1,0 +1,1 @@
+exec("""try:[print("Internet Connected and Working") if __import__("socket").create_connection(("1.1.1.1",53)) != None else print("Internet not connected") for i in range(1)]\nexcept:print("Internet not connected")""")

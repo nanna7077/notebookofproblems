@@ -1,0 +1,1 @@
+print((lambda a:'Internet connected and working'if 0==a.system('ping google.com -w 1 > clear')else'Internet not connected.')(__import__('os')))
