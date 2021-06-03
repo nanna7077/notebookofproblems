@@ -3,5 +3,6 @@
         {"name": "Number List Generator", "difficulty": "Easy", "language": "Any Language", "link": "problems/range_from_list.html", "contributorName": "Nannan", "contributorLink": "https://github.com/nanna7077"},
         {"name": "Instance Counter", "difficulty": "Easy", "language": "Python", "link": "problems/instance_counter.html", "contributorName": "Nannan", "contributorLink": "https://github.com/nanna7077"},
         {"name": "Complex Sorter", "difficulty": "Easy", "language": "Python", "link": "problems/complex_sorter.html", "contributorName": "Nannan", "contributorLink": "https://github.com/nanna7077"},
-        {"name": "The Tricky Half-Triangle", "difficulty": "Moderate", "language": "Python", "link": "problems/half_triangle_without_implicit_str_or_int.html", "contributorName": "Sriram", "contributorLink": "https://github.com/Sriram-bb63"}
+        {"name": "The Tricky Half-Triangle", "difficulty": "Moderate", "language": "Python", "link": "problems/half_triangle_without_implicit_str_or_int.html", "contributorName": "Sriram", "contributorLink": "https://github.com/Sriram-bb63"},
+        {"name": "Do I Have Internet?", "difficulty": "Moderate", "language": "Python", "link": "problems/internet_connectivity.html", "contributor": "Sriram", "contributorLink": "https://github.com/Sriram-bb63"}
     ]}
