@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/paper.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link rel = "icon" href = "../static/favicon.png" type = "image/x-icon">
+        <title>The Notebook Of Problems</title>
+    </head>
+    <body>
+        <div class="sidebar" style="float: left; width: 3%;">
+            <br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br><br><br><div class="circle" style="margin-left: 1.5vh;"></div><br>
+        </div>
+        <div class="container" style="float: right; width: 97%;">
+            <div class="topbar">
+                <br>
+                <a href="/notebookofproblems/index.html"><button class="silentbttn">Home</button></a>
+                <a href="/notebookofproblems/search.html"><button class="silentbttn">Search</button></a>
+            </div>
+            <center>
+                <div class="title">
+                    The Notebook Of Problems
+                </div>
+            </center>
+            <br><br>
+            <center><div class="title" style="font-size: 34; margin-bottom: 2vh;">Problem #: Worst sorting algorithm</div></center>
+            <center>
+                <div class="tags" style="display: inline;">
+                    Tags:
+                    <button class="language">Python</button>
+                    <button class="Difficulty">Moderate</button>
+                </div>
+                <div class="contributor" style="display: inline;">
+                    &emsp;Contributed by:
+                    <a href="https://github.com/Sriram-bb63/">Sriram</a>,
+                </div>
+            </center>
+            <div class="textcontainer" style="margin-top: 2vh;">
+                Problem Statement: Create the worst possible algorithm to sort a list.
+                <br><br>
+                Sample Output:
+                <div class="codedisp">
+                    Sorted array:<br>
+                    &emsp;[1, 2, 3, 4, 5, 6, 7, 8, 9]<br> 
+                </div>
+                Check below to see if your solution is correct or if you have come up with a much more awesome solution <strike>Which you can share with us too : D</strike>!
+                <br>
+                <center><button class="bttn" id="showcode" onclick="showCode()">Show/Hide code</button></center>
+                <div class="hiddencontainer" id="solution" style="display: none;">
+                    Python: (Solution by <a href="https://github.com/Sriram-bb63/">Sriram</a>)
+                    <div style="background: none; font-size: 12;  margin-top: 2vh;">
+                        <script src="https://gist-it.appspot.com/https://github.com/nanna7077/notebookofproblems/blob/main/problems/worst_sort/solution_sriram.py"></script>
+                    </div>
+                    <br>
+                </div>
+                <div class="footer">
+                    <center>Designed with 💙 by <a href="https://github.com/nanna7077">Nannan</a></center>
+                </div>
+        </div>
+    </body>
+    <script>
+        function showCode() {
+            var x = document.getElementById("solution");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "none";
+            }
+        };
+    </script>
+</html>
